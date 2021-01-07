@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Search from './components/Search';
+import Navbar from './components/Navbar';
+import './index.css';
+import Keyboard from './components/Keyboard';
+import ContactList from './components/ContactList';
+import AddContact from './components/AddContact';
+import Modal from './components/Modal';
+import CallScreen from './components/CallScreen';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Search />
+        <ContactList />
+        <Keyboard />
+        <Navbar />
+        <AddContact />
+        <Modal />
+        <CallScreen />
+      </div>
     </div>
   );
 }
